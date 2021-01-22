@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #199aa3;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1f1f1f;
+  }
+    .attribution { font-size: 11px; text-align: center; margin-top: -2rem;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .img-top{
+      width: 55%;
+      position: absolute;
+      left: -5%;
+      top: -65%;
+    }
+    .img-bottom{
+      width: 55%;
+      position: absolute;
+      right: -6%;
+      bottom: -70%;
+    }
+    .big-card{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      height: 99vh;
+      width: auto;
+    }
+
+    .img-Victor{
+      position: relative;
+      top: -3.45rem;
+      width: 90px;
+      border-radius: 100%;
+      border: 5px solid white;
+    }
+    .card{
+      font-family: 'Kumbh Sans', sans-serif;
+      text-align: center;
+      width: 16.5rem;
+      height: 17rem;
+      border-radius: 0.5rem;
+      background-color: white;
+    }
+    .img-card{
+      position: relative;
+      border-radius: 0.5rem 0.5rem 0 0;
+      width: 16.5rem;
+      height: auto;
+    }
+
+    .details{
+      position: relative;
+      margin-top: -2.8rem;
+    }
+
+    .city{
+      margin-top: 0.4rem;
+      font-size: small;
+      color: grey;
+    }
+    .small-header{
+      font-size: small;
+    }
+    .small-text{
+      font-size: 10px;
+      font-weight: 300;
+      color: grey;
+    }
+
+    td{
+      column-width: 4rem;
+    }
+
+    .ref{
+      text-align: center;
+    }
+    table{
+      margin: 1.5rem auto;
+      font-stretch: semi-condensed;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <img class="img-top" src="images/bg-pattern-top.svg" alt="">
+  </div>
+
+  <div class="big-card">
+    <div class="card">
+      <img class="img-card" src="images/bg-pattern-card.svg" alt="">
+      <img class="img-Victor" src="images/image-victor.jpg" alt="">
+      <div class="details">
+        <div class="name">
+          Victor Crest
+          <span  style="color: grey"> 26 </span>
+        </div>
+
+        <div class="city">
+          London
+        </div>
+
+      </div>
+
+      <div class="ref">
+        <table>
+          <thead>
+            <tr class="small-header">
+              <td>80K</td>
+              <td>803K</td>
+              <td>1.4K</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="small-text">
+              <td>Followers</td>
+              <td>Likes</td>
+              <td>Photos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ashley Le</a>.
+  </div>
+
+  <div>
+    <img class="img-bottom" src="images/bg-pattern-bottom.svg" alt="">
+  </div>
+
+
+</body>
+</html>
